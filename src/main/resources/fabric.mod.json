@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "battletimers",
+	"version": "${version}",
+	"name": "Cobblemon Battle Timers",
+	"description": "A battle timer mod with a functional API :)",
+	"authors": [
+		"hiscorginess"
+	],
+	"contact": {
+		"homepage": "https://github.com/corgi-in-tights/battletimers",
+		"sources": "https://github.com/corgi-in-tights/battletimers"
+	},
+	"license": "MPL 2.0",
+	"environment": "*",
+	"entrypoints": {
+		"server": [
+			"dev.reyaan.BattleTimers"
+		]
+	},
+	"mixins": [
+		"battletimers.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.24",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*",
+		"cobblemon": ">=1.4"
+	}
+}
